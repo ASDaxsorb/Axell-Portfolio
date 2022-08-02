@@ -13,15 +13,24 @@ function Hero() {
       <div className="flex flex-col items-center">
         <div className="relative">
           <motion.img
-            initial={{ rotateZ: 45, borderRadius: '0%' }}
-            whileInView={{ rotateZ: 0, borderRadius: '100%' }}
+            initial={{ opacity: 0, y: -50, borderRadius: '0%' }}
+            whileInView={{ opacity: 1, y: 0, borderRadius: '100%' }}
             transition={{ duration: 1 }}
             className="select-none w-40  md:w-52 shadow-lg"
             src="https://scontent.fmex10-3.fna.fbcdn.net/v/t39.30808-6/253236850_4451912768231745_440015058919669888_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHQj_N_uBq37tjAAXsEduQpKCzKpn2qBYIoLMqmfaoFgtg4THqSIKKHl2ssaI1tI-3KXPeXYTZSMEmsnXRkMM5c&_nc_ohc=vW0EguQNSKEAX96mMIx&_nc_ht=scontent.fmex10-3.fna&oh=00_AT_6anCSXzyjZ5LP0IjNWAkGmiRGhShq-wLPO4prSwRgCg&oe=62EC2921"
             alt="Axell Profile Picture"
           />
           <motion.a
-            whileHover={{ scale: 1.5, transition: { duration: 0.3 } }}
+            initial={{ scale: 0, rotateZ: 180 }}
+            whileInView={{
+              scale: 1,
+              rotateZ: 0,
+              transition: { duration: 0.3 },
+            }}
+            whileHover={{
+              scale: [1, 1.8, 1.3],
+              transition: { duration: 0.3, type: 'tween' },
+            }}
             href="https://github.com/ASDaxsorb"
             target="_blank"
             className="absolute text-white dark:text-zinc-900 text-3xl z-10 rounded-full p-2 border-cyan-500 dark:border-green-300 border-4 right-0 bottom-0 bg-cyan-500 dark:bg-green-300"
@@ -36,9 +45,9 @@ function Hero() {
               sequence={[
                 'Web Developer',
                 2000,
-                'Frontend Developer',
-                2000,
                 'Backend Developer',
+                2000,
+                'Frontend Developer',
               ]}
               wrapper="span"
               repeat="Infinity"

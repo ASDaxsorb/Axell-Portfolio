@@ -9,6 +9,8 @@ import css from './assets/images/css.png'
 import sql from './assets/images/sql.png'
 import django from './assets/images/django.png'
 import reactImg from './assets/images/react.png'
+import bootstrap from './assets/images/bootstrap.png'
+import tailwind from './assets/images/tailwind.png'
 
 function App() {
   return (
@@ -30,6 +32,18 @@ function App() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-y-3 my-5">
               <ItemColumn img={django} title="Django" desc="1 year" />
               <ItemColumn img={reactImg} title="React" desc="1 year" />
+              <ItemColumn
+                img={bootstrap}
+                title="Bootstrap"
+                desc="1 year"
+                imageBorderRadius="rounded-lg"
+              />
+              <ItemColumn
+                img={tailwind}
+                title="Tailwind"
+                desc="1 year"
+                imageBorderRadius="rounded-lg"
+              />
             </div>
           </Section>
         </main>
