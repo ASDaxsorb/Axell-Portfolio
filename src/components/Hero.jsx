@@ -2,6 +2,7 @@ import { FaGithubAlt } from 'react-icons/fa'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import TypeAnimation from 'react-type-animation'
 import { motion } from 'framer-motion'
+import profile from '../assets/images/profile.jpg'
 
 function Hero() {
   return (
@@ -17,8 +18,7 @@ function Hero() {
             whileInView={{ opacity: 1, y: 0, borderRadius: '100%' }}
             transition={{ duration: 1 }}
             className="select-none w-40  md:w-52 shadow-lg"
-            src="https://scontent.fmex10-3.fna.fbcdn.net/v/t39.30808-6/253236850_4451912768231745_440015058919669888_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHQj_N_uBq37tjAAXsEduQpKCzKpn2qBYIoLMqmfaoFgtg4THqSIKKHl2ssaI1tI-3KXPeXYTZSMEmsnXRkMM5c&_nc_ohc=vW0EguQNSKEAX96mMIx&_nc_ht=scontent.fmex10-3.fna&oh=00_AT_6anCSXzyjZ5LP0IjNWAkGmiRGhShq-wLPO4prSwRgCg&oe=62EC2921"
-            alt="Axell Profile Picture"
+            src={profile}
           />
           <motion.a
             initial={{ scale: 0, rotateZ: 180 }}
