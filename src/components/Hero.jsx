@@ -1,5 +1,6 @@
 import { FaGithubAlt } from 'react-icons/fa'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { MdContactMail } from 'react-icons/md'
 import TypeAnimation from 'react-type-animation'
 import { motion } from 'framer-motion'
 import profile from '../assets/images/profile.jpg'
@@ -9,7 +10,7 @@ function Hero() {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.8, stiffness: 100}}
     >
       <div className="flex flex-col items-center">
         <div className="relative">
@@ -82,6 +83,11 @@ function Hero() {
             target="_blank"
           >
             <AiFillGithub className="mr-2" /> GitHub
+          </a>
+        </li>
+        <li className="mt-1">
+          <a href="#contact" className="flex items-center">
+            <MdContactMail className="mr-2" /> Contact
           </a>
         </li>
       </motion.ul>

@@ -6,9 +6,8 @@ function ItemColumn({ title, desc, img, imageBorderRadius }) {
     <Tilt>
       <div className="flex flex-col bg-white transition-all dark:bg-zinc-800 rounded-lg p-5 shadow-md hover:shadow-lg border-2 dark:border-none">
         <div
-          className={`h-40 self-center overflow-hidden ${
-            imageBorderRadius || ''
-          }`}
+          className={`h-40 self-center overflow-hidden ${imageBorderRadius || ''
+            }`}
         >
           <img className="object-contain w-full h-full" src={img} alt={title} />
         </div>

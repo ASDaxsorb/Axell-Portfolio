@@ -11,6 +11,7 @@ import django from './assets/images/django.png'
 import reactImg from './assets/images/react.png'
 import bootstrap from './assets/images/bootstrap.png'
 import tailwind from './assets/images/tailwind.png'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
             </div>
           </Section>
         </main>
+        <Section title="Contact Me">
+          <Contact />
+        </Section>
         <footer>
           <p className="text-slate-800 dark:text-zinc-500 text-center">
             &copy; Axell Solis. All rights reserved

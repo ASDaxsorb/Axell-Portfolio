@@ -9,7 +9,7 @@ function Section({ title, children }) {
       transition={{ duration: 0.8 }}
       className="my-10"
     >
-      <section className="p-2 my-2 bg-cyan-100 dark:bg-zinc-800 rounded-lg">
+      <section className="p-2 my-2 bg-cyan-200 dark:bg-zinc-800 rounded-lg">
         <TitleSection>{title}</TitleSection>
       </section>
       <section>{children}</section>
