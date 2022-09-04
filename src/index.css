@@ -9,3 +9,7 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
